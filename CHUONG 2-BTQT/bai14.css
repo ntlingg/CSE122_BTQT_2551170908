@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+}
+.khung-chinh{
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.dai-tieu-de{
+    background-color:#2E7D32 ;
+    padding: 14px 20px;
+    text-align: center;
+}
+.dai-tieu-de h1{
+    color: #FFEB3B ;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.doan-dan-nhap{
+    color:#1b5e20  ;
+    font-style: italic;
+    text-align: center;
+    font-size: 13.5px;
+    margin: 18px 25px 25px 25px;
+}
+.luoi-ky-quan{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0 25px;
+}
+.the-ky-quan{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+.anh-ky-quan{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid#2E7D32 ;
+    border-radius: 6px;
+}
+.noi-dung-ky-quan{
+    padding: 12px 14px;
+    flex: 1;
+}
+.tieu-de-ky-quan{
+    color: #2E7D32 ;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+}
+.mo-ta-ky-quan{
+    color: #555555;
+    font-size: 12.5px;
+    line-height: 1.5;
+    margin: 0;
+}

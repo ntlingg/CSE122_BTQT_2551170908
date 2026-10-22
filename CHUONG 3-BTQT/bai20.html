@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 — Hiệu ứng ảnh với filter</title>
+    <link rel="stylesheet" href="bai20.css">
+</head>
+<body>
+    <!-- SVG filter cho hiệu ứng Wave (ẩn, chỉ để CSS gọi tới) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <filter id="song">
+            <feTurbulence type="turbulence" baseFrequency="0.02 0.05" numOctaves="2" result="nhieu"/>
+            <feDisplacementMap in="SourceGraphic" in2="nhieu" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+    </svg>
+
+    <main class="trang">
+        <div class="khung-anh">
+            <img id="anh-hoa" class="fx-gray" src="hoahong.gif" alt="Hoa hồng">
+            <div class="dong-chu">Special For You</div>
+        </div>
+
+        <div class="thanh-nut" id="thanh-nut">
+            <button type="button" data-fx="gray" class="active">Gray</button>
+            <button type="button" data-fx="xray">Xray</button>
+            <button type="button" data-fx="invert">Invert</button>
+            <button type="button" data-fx="fliph">FlipH</button>
+            <button type="button" data-fx="flipv">FlipV</button>
+            <button type="button" data-fx="glow">Glow</button>
+            <button type="button" data-fx="shadow">Shadow</button>
+            <button type="button" data-fx="boldshadow">Bold Shadow</button>
+            <button type="button" data-fx="dropshadow">DropShadow</button>
+            <button type="button" data-fx="blur">Blur</button>
+            <button type="button" data-fx="wave">Wave</button>
+            <button type="button" data-fx="mask">Mask</button>
+            <button type="button" data-fx="alpha">Alpha</button>
+        </div>
+    </main>
+
+    <script src="bai20.js"></script>
+</body>
+</html>

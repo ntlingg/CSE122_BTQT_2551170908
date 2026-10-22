@@ -1,0 +1,94 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #eeeeee;
+    margin:0;
+    padding:20px
+}
+a{
+    color:#1668C1 ;
+    text-decoration: none;
+}
+.khung-ngoai{
+    width:900px;
+    margin:0 auto;
+    background-color: #ffffff;
+}
+.tieu-de-trang{
+    border-bottom: 2px solid #1668C1  ;
+    padding:10px 15px;
+}
+.tieu-de-trang h1{
+    color:#1668C1 ;
+    font-size: 24px;
+    margin:0;
+}
+.than-trang{
+    display:flex;
+}
+.menu-doc{
+    width:180px;
+    background-color: #f5f9fd;
+    border-right: 1px solid #dddddd;
+    padding:15px;
+}
+.tieu-de-menu{
+    font-size: 11px;
+    font-weight: bold;
+    color:#666666;
+    margin-bottom: 10px;
+}
+.menu-doc a{
+    display:block;
+    padding:5px 0;
+}
+.noi-dung{
+    flex:1;
+    padding:15px;
+}
+.chuyen-muc{
+    margin-bottom: 20px;
+}
+.thanh-chuyen-muc{
+    background-color: #1668C1;
+    color:#FFFFFF;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.bai-viet{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.noi-dung-bai{
+    flex:1;
+    padding-right: 15px;
+}
+.tieu-de-bai{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.mo-ta-bai{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.anh-minh-hoa{
+    width:90px;
+    height:70px;
+    flex-shrink: 0;
+    border-radius:6px;
+    overflow:hidden;
+    border:1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+.anh-minh-hoa img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+    transition: transform 0.3s ease;
+}

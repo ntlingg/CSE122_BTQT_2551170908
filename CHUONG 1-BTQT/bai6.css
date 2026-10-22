@@ -1,0 +1,59 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+}
+.khung-bao-quanh {
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background-color: #F9F0DC;
+}
+.tieu-de {
+    color: #E65100;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+.anh-va-bang {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.anh-minh-hoa {
+    width: 150px;
+    margin-top: 5px;
+}
+.bang-mon-an {
+    display: table;
+    border-collapse: collapse;
+    flex: 1;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.hang-tieu-de,.hang-du-lieu {
+    display: table-row;
+}
+.o-tieu-de,.o-du-lieu {
+    display: table-cell;
+    padding: 8px 14px;
+    text-align: left;
+}
+.o-tieu-de {
+    background-color: #E65100;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.o-du-lieu {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0D6C2;
+}
+.hang-du-lieu:nth-child(odd) .o-du-lieu {
+    background-color: #FDF8EF;
+}
+.cot-stt {
+    width: 50px;
+    text-align: center;
+}
+.cot-ten-mon {
+    width: 300px;
+}

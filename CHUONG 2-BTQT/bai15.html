@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15 - Máy tính đơn giản (Calculator)</title>
+    <link rel="stylesheet" href="bai15.css">
+</head>
+<body>
+    <div class="may-tinh">
+        <div class="nhan-hieu">MÁY TÍNH ĐIỆN TỬ</div>
+        <div class="man-hinh">
+            <div id="phep-tinh" class="phep-tinh"></div>
+            <div id="ket-qua" class="ket-qua">0</div>
+        </div>
+        <div class="ban-phim">
+            <button type="button" class="nut nut-xoa" onclick="xoaTatCa()">C</button>
+            <button type="button" class="nut nut-phu" onclick="nhapNgoac()">( )</button>
+            <button type="button" class="nut nut-phu" onclick="nhapKyTu('%')">%</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('÷')">÷</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('7')">7</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('8')">8</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('9')">9</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('×')">×</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('4')">4</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('5')">5</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('6')">6</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('−')">−</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('1')">1</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('2')">2</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('3')">3</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('+')">+</button>
+            <button type="button" class="nut nut-so nut-khong" onclick="nhapKyTu('0')">0</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('.')">.</button>
+            <button type="button" class="nut nut-bang" onclick="tinhKetQua()">=</button>
+        </div>
+    </div>
+    <script src="bai15.js"></script>
+</body>
+</html>

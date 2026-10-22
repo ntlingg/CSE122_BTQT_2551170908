@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(251, 251, 251);
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.tieu-de-1 {
+    color: #E65100;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.tieu-de-2 {
+    color: #E65100;
+    font-size: 14px;   
+    margin-top: 1px;
+    font-weight: bold;
+}
+.khoi-noi-dung {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.doan-van {
+    flex: 1;
+    text-align: justify;
+}
+.khung-anh {
+    width: 200px;
+}
+.anh {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.chu-dau::first-letter {
+    font-size: 45px;
+    color: #E65100;
+    font-weight: bold; 
+    float: left;
+    line-height: 38px;
+    padding-right: 6px;
+    padding-top: 2px;
+}
+.khoi-chu {
+    border: 3px solid #2E7D32;
+    background-color: #f4fbf4;
+    border-radius: 6px;
+    padding: 20px;
+}
+.tieu-de-chu {
+    font-style: italic;
+    color: #2E7D32;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.cot-danh-sach {
+    display: flex;
+    justify-content: space-between;
+}
+.cot-danh-sach ul {
+    margin: 0;
+    padding-left: 20px;
+    width: 48%;
+    list-style-type: disc;
+   
+}
+.cot-danh-sach li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+    .tieu-de-1 {
+        font-size: 24px;
+    }
+    .khoi-noi-dung {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .khung-anh {
+        width: 100%;
+    }
+    .anh {
+        height: 200px;
+    }
+    .cot-danh-sach {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .cot-danh-sach ul {
+        width: 100%;
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fdf5f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tieu-de-chinh {
+    color: #c2410c;
+    font-size: 24px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 650px;
+    border-bottom: 2px solid #c2410c;
+    padding-bottom: 8px;
+}
+.khung-bieu-mau {
+    background-color: #FFFFFF;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 650px;
+}
+.khung-bieu-mau h2 {
+    color: #c2410c;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.tieu-de-phu {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.nhom-nhap-lieu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+.nhom-nhap-lieu label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.nhom-nhap-lieu input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.nhom-nhap-lieu .thong-bao {
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+    display: none;
+}
+.nhom-nhap-lieu.hop-le input {
+    border: 1.5px solid #16a34a;
+    background-color: #FFFFFF;
+}
+.nhom-nhap-lieu.hop-le .thong-bao {
+    display: block;
+    color: #16a34a;
+}
+.nhom-nhap-lieu.bi-loi input {
+    border: 1.5px solid #dc2626;
+    background-color: #fff8f8;
+}
+.nhom-nhap-lieu.bi-loi .thong-bao {
+    display: block;
+    color: #dc2626;
+}
+.nut-dang-ky {
+    width: 100%;
+    background-color: #c2410c;
+    color: #FFFFFF;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.nut-dang-ky:hover {
+    background-color: #a33209;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+    .khung-bieu-mau {
+        padding: 25px 20px;
+        border-radius: 8px;
+    }
+    .khung-bieu-mau h2 {
+        font-size: 20px;
+    }
+    .nhom-nhap-lieu input {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    .nut-dang-ky {
+        padding: 12px;
+        font-size: 15px;
+    }
+}

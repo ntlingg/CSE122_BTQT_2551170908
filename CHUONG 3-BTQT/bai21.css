@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 200px 1fr 160px;
+    grid-template-areas:
+        "banner banner banner"
+        "menu main ads";
+    min-height: 100vh;
+}
+
+.banner {
+    grid-area: banner;
+    position: relative;
+    background: #C62828;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.banner .nen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .logo,
+.banner h1 {
+    position: relative;
+}
+
+.banner .logo {
+    width: 60px;
+}
+
+.banner h1 {
+    font-size: 22px;
+}
+
+.menu {
+    grid-area: menu;
+    background: linear-gradient(#C62828, #8E0000);
+    padding-top: 15px;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    grid-area: main;
+    background: #fff;
+    padding: 20px;
+}
+
+.main h2 {
+    color: #C62828;
+    margin-bottom: 15px;
+}
+
+.sub {
+    background: #FFE082;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.sub ul {
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.content {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.content p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ads {
+    grid-area: ads;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ads img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .wrap {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "menu"
+            "main"
+            "ads";
+    }
+
+    .sub ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

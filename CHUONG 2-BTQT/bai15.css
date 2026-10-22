@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #0b0f19;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+.may-tinh {
+    background-color: #111827;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    width: 100%;
+    max-width: 360px;
+    padding: 24px;
+}
+.nhan-hieu {
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.man-hinh {
+    background-color: #022c22;
+    color: #4ade80;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+}
+.phep-tinh {
+    font-size: 16px;
+    color: #4ade80;
+    min-height: 24px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    word-break: break-all;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.phep-tinh::-webkit-scrollbar {
+    display: none;
+}
+.ket-qua {
+    font-size: 42px;
+    font-weight: 700;
+    color: #4ade80;
+    line-height: 1.1;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.ket-qua::-webkit-scrollbar {
+    display: none;
+}
+.ban-phim {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+.nut {
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.15s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+.nut:hover {
+    filter: brightness(1.18);
+    transform: translateY(-2px);
+}
+.nut:active {
+    transform: scale(0.96) translateY(0);
+    filter: brightness(0.9);
+}
+.nut-so,
+.nut-phu {
+    background-color: #25313f;
+    color: #e5e7eb;
+}
+.nut-toan-tu {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+.nut-xoa {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+.nut-bang {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+.nut-khong {
+    grid-column: span 2;
+}

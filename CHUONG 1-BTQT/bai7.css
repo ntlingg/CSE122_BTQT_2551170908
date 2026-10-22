@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef;
+    font-family: Arial, sans-serif;
+}
+.khung-trang {
+    width: 760px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.dai-tieu-de {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 16px;
+}
+.dai-phu {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+.than-bai {
+    padding: 20px 0;
+    overflow: hidden;
+}
+.cot-trai {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    border-right: 1px solid #C8102E;
+    min-height: 320px;
+    padding-top: 220px;
+}
+.cot-phai {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+.tieu-de-muc {
+    color: #C8102E;
+    font-size: 14px;
+    margin: 12px 0 8px;
+}
+.noi-dung {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    padding-left: 18px;
+    position: relative;
+}
+.noi-dung::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+}
+.anh-san-pham {
+    float: right;
+    width: 140px;
+    margin: 0 0 10px 12px;
+}
+.o-vuong::before {
+    content: "\25A1";
+    margin-right: 6px;
+}

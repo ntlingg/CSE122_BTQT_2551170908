@@ -1,0 +1,105 @@
+:root {
+  --nen: #f1f5f9;       /* nền trang */
+  --chu: #0f172a;       /* chữ */
+  --the: #ffffff;       /* nền thẻ */
+  --vien: #cbd5e1;      /* viền thẻ */
+  --nhan: #2563eb;      /* chữ tiêu đề thẻ */
+  --code: #e2e8f0;      /* nền chữ code */
+  --nut: #2563eb;       /* nền nút gạt */
+  --nut-nhan: #60a5fa;  /* màu nhấn nút gạt */
+  --chot: #ffffff;      /* chấm tròn trong nút */
+}
+.toi {
+  --nen: #0f172a;       
+  --chu: #e2e8f0;       
+  --the: #111c33;
+  --vien: #24324f;
+  --nhan: #60a5fa;
+  --code: #1e293b;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: var(--nen);
+  color: var(--chu);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.4s, color 0.4s;   /* nền + chữ chuyển mượt */
+}
+.khung {
+  max-width: 620px;
+  margin: 0 auto;
+}
+.dau{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dau h1 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--chu);
+}
+.nut-gat {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  border: 2px solid transparent;
+  border-radius: 13px;
+  background: var(--nut);
+  cursor: pointer;
+  transition: background 0.4s, border-color 0.3s;
+}
+
+.nut-gat:hover {
+  border-color: var(--nut-nhan);
+}
+
+.nut-gat::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--chot);
+  transition: left 0.3s;
+}
+.toi .nut-gat::after {
+  left: 21px;
+}
+.the{
+  background: var(--the);
+  border: 1px solid var(--vien);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  transition: background 0.4s, border-color 0.4s;
+}
+.the h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--nhan);
+  transition: color 0.4s;
+}
+.the p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+code {
+  background: var(--code);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  transition: background 0.4s;
+}
+.ghi-chu {
+  margin-top: 18px;
+  font-size: 11px;
+  opacity: 0.7;
+}

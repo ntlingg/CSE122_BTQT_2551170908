@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 — Kiểm tra biểu mẫu</title>
+    <link rel="stylesheet" href="bai17.css">
+</head>
+<body>
+    <form id="bieu-mau-dang-ky" class="khung-bieu-mau" onsubmit="return kiemTraBieuMau(event)">
+        <h2>Đăng ký tài khoản</h2>
+        <p class="tieu-de-phu">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+        <div class="nhom-nhap-lieu" id="nhom-ho-ten">
+            <label for="ho-ten">Họ và tên</label>
+            <input type="text" id="ho-ten" placeholder="Nhập họ và tên">
+            <span class="thong-bao" id="thong-bao-ho-ten"></span>
+        </div>
+        <div class="nhom-nhap-lieu" id="nhom-email">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Nhập email">
+            <span class="thong-bao" id="thong-bao-email"></span>
+        </div>
+        <div class="nhom-nhap-lieu" id="nhom-mat-khau">
+            <label for="mat-khau">Mật khẩu</label>
+            <input type="password" id="mat-khau" placeholder="Nhập mật khẩu">
+            <span class="thong-bao" id="thong-bao-mat-khau"></span>
+        </div>
+        <div class="nhom-nhap-lieu" id="nhom-xac-nhan">
+            <label for="xac-nhan-mat-khau">Xác nhận mật khẩu</label>
+            <input type="password" id="xac-nhan-mat-khau" placeholder="Nhập lại mật khẩu">
+            <span class="thong-bao" id="thong-bao-xac-nhan"></span>
+        </div>
+        <button type="submit" class="nut-dang-ky">Đăng ký</button>
+    </form>
+    <script src="bai17.js"></script>
+</body>
+</html>
+

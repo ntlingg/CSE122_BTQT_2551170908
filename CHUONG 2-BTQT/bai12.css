@@ -1,0 +1,95 @@
+body {
+    font-family:"Gelasio", Georgia, "Times New Roman", serif;
+    font-variant-numeric: lining-nums;
+    margin: 0;
+    padding: 40px 0;
+}
+#khung-ngoai {
+    width: 640px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+#khung {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #999999;
+}
+#o-lich {
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+#o-lich p {
+    margin: 5px 0;
+}
+#nam {
+    color: #C62828;
+    font-size: 20px;
+}
+#thang {
+    color: #1565C0;
+    font-size: 22px;
+}
+#so-ngay {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+}
+#thu {
+    color: #1565C0;
+    font-size: 22px;
+}
+#loi-chao {
+    color: #C62828;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    margin: 25px 0;
+    font-style: italic;
+}
+#form-nhap {
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.cot {
+    display: inline-block;
+    width: 130px;
+    margin: 0 5px;
+}
+.cot label {
+    display: block;
+    width: 100px;
+    margin: 0 auto 5px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.cot input {
+    display: block;
+    box-sizing: border-box;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#nut-in {
+    background-color: #546E7A;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: bottom;
+}

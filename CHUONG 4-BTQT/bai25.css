@@ -1,0 +1,39 @@
+body {
+    background-color: #f5f5f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.thanh-dieu-huong {
+    background-color: #0d6efd;
+}
+.khoi-hero {
+    background-color: #ffffff;
+}
+.tieu-de-hero {
+    font-weight: 700;
+}
+.mo-ta-hero {
+    color: #333;
+}
+.luoi-the {
+    margin-top: 0;
+}
+.the-du-lich {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.anh-the {
+    height: 200px;
+    object-fit: cover;
+}
+.tieu-de-the {
+    font-weight: 600;
+}
+.mo-ta-the {
+    font-size: 14px;
+    color: #555;
+}
+.chan-trang {
+    background-color: #212529;
+    font-size: 14px;
+    margin-top: 40px;
+}

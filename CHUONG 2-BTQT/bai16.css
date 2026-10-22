@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+main {
+    width: 600px;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.header {
+    background: #6d28d9;
+    color: #ffffff;
+    padding: 24px 28px;
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.header p {
+    font-size: 14px;
+    color: #ede9fe;
+}
+.content {
+    padding: 24px 28px 28px;
+}
+.input-task {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f5;
+}
+.input-task input {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    outline: none;
+    color: #1f2937;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-task input::placeholder {
+    color: #9ca3af;
+}
+.input-task input:focus {
+    border-color: #6d28d9;
+    box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.15);
+}
+.input-task button {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #6d28d9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.input-task button:hover {
+    background: #5b21b6;
+}
+.task-list {
+    list-style: none;
+    margin-top: 8px;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px dashed #ede9fe;
+}
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.checkbox {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    border: 2px solid #a78bfa;
+    border-radius: 6px;
+    background: #ffffff;
+    transition: background 0.2s, border-color 0.2s;
+}
+.task-text {
+    font-size: 15px;
+    color: #1f2937;
+}
+.task-item.completed .checkbox {
+    background: #6d28d9;
+    border-color: #6d28d9;
+}
+.task-item.completed .task-text {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+.btn-delete {
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b91c1c;
+    background: #fde2e2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-delete:hover {
+    background: #fbcaca;
+}
+/* Chân danh sách */
+.app-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}
